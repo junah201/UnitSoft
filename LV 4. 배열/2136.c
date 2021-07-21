@@ -1,0 +1,37 @@
+//2136. [basic] 이차원배열 연습문제-20
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+    int arr[100][100] = {0,};
+    int N;
+    scanf("%d",&N);
+
+    int x,y;
+    int num=1;
+    for(int i=0;i<=N;i++){
+        y=i-1;
+        x=0;
+        for(int j=0;j<i;j++){
+            arr[y--][x++] = num++;
+        }
+    }
+
+    for(int i=0;i<N;i++){
+        y=N-1;
+        x=i+1;
+        for(int j=0;j<N-i-1;j++){
+            arr[y--][x++] = num++;
+        }
+    }
+
+    for(int i=0;i<N;i++){
+        for(int j=0;j<N;j++){
+            printf("%5d",arr[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
