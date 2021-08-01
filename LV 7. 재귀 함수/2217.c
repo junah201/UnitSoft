@@ -17,7 +17,6 @@ int count(int n){
     }
     count(n);
 }
-
 int main(){
     int N;
     scanf("%d",&N);
