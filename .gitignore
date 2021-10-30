@@ -1,0 +1,16 @@
+## 폴더 무시
+vscode\
+
+## 파일 무시
+main.py
+main.c
+main.cpp
+temp.py
+temp.c
+temp.cpp
+temp2.c
+temp2.cpp
+
+## 확장자 무시
+*.exe
+*.json
