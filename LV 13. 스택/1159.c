@@ -17,7 +17,7 @@ int main() {
             size=x;
             idx=0;   
         }
-        //pop
+        // pop
         else if(cmd[0]=='p'&&cmd[1]=='o') {
             if(idx==0) printf("underflow\n");
             else {
@@ -27,7 +27,7 @@ int main() {
                 printf("\n");
             }
         }
-        //push
+        // push
         else if(cmd[0]=='p'&&cmd[1]=='u') {
             scanf("%d",&x);
             if(idx==size) printf("overflow\n");
@@ -38,7 +38,7 @@ int main() {
                 printf("\n");
             }
         }
-        //double
+        // double
         else if(cmd[0]=='d') {
             size*=2;
             if(size>100) size=100;
