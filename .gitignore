@@ -13,4 +13,6 @@ temp2.cpp
 
 ## 확장자 무시
 *.exe
-*.json
+.vscode/
+.cph/
+*.bin
