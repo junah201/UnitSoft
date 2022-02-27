@@ -1,3 +1,5 @@
+// 1221. 세모별찍기
+
 #include <stdio.h>
 
 int N;
